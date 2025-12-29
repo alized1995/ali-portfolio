@@ -1,0 +1,38 @@
+.custom-navbar {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
+  background-size: cover;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffdd57;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #ffdd57;
+}
+
+/* Mobile menu spacing */
+.navbar-nav .nav-item {
+  margin-bottom: 0.5rem;
+}
+
+/* Shrink effect on scroll */
+/* .navbar.scrolled {
+  padding: 0.5rem 0;
+  background: rgba(0, 0, 0, 0.85) !important;
+} */

@@ -1,0 +1,67 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.contact-section {
+  min-height: 30vh;
+  background-image: url('/about-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(145deg, #6c63ff, #8e94f3);
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 30px;
+  border-radius: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+}
+
+.contact-card .icon {
+  font-size: 2.5rem;
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.contact-card:hover .icon {
+  transform: rotate(20deg);
+}
+
+.contact-card .info h5 {
+  margin: 0 0 5px 0;
+  font-weight: 700;
+}
+
+.contact-card .info p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeUp {
+  animation: fadeInUp 1s ease forwards;
+}

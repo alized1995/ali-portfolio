@@ -1,0 +1,22 @@
+<section id="skills" class="skills-section py-5 reveal">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">Skills</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4" *ngFor="let group of skillGroups">
+        <div class="skill-group-card">
+          <h5 class="fw-semibold mb-3">{{ group.title }}</h5>
+
+          <div class="skill-badges">
+            <span
+              class="skill-badge"
+              *ngFor="let skill of group.skills"
+            >
+              {{ skill }}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

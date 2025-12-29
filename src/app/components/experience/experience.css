@@ -1,0 +1,180 @@
+/* =========================
+   EXPERIENCE SECTION
+========================= */
+
+.experience-section {
+  min-height: 100vh;
+  background-image: url('/about-bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 90px 0;
+  overflow-x: hidden;
+}
+
+/* Overlay */
+.experience-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  z-index: 1;
+}
+
+/* Content above overlay */
+.experience-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-bottom: 4rem;
+  letter-spacing: 0.6px;
+}
+
+/* =========================
+   TIMELINE
+========================= */
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* =========================
+   TIMELINE ITEM
+========================= */
+
+.timeline-item {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 3.5rem;
+  align-items: stretch;
+}
+
+/* Timeline dot */
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: #0d6efd;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 6px rgba(13, 110, 253, 0.25);
+}
+
+/* =========================
+   CARD CONTENT
+========================= */
+
+.timeline-content {
+  background: #ffffff;
+  padding: 26px 28px;
+  border-radius: 12px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 55px rgba(0, 0, 0, 0.18);
+}
+
+.timeline-content h4 {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-content h6 {
+  color: #6c757d;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+}
+
+.timeline-date {
+  font-size: 0.85rem;
+  color: #adb5bd;
+  margin-bottom: 1rem;
+}
+
+.timeline-content ul {
+  padding-left: 18px;
+  margin-bottom: 1rem;
+}
+
+.timeline-content ul li {
+  margin-bottom: 6px;
+  font-size: 0.92rem;
+}
+
+/* =========================
+   SKILL TAGS
+========================= */
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.skill-tags span {
+  background: #eef4ff;
+  color: #0d6efd;
+  padding: 5px 14px;
+  font-size: 0.75rem;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+/* =========================
+   MOBILE FIXES
+========================= */
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 70px 0;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item {
+    gap: 16px;
+  }
+
+  .timeline-content {
+    min-height: auto;
+    padding: 22px;
+  }
+}
