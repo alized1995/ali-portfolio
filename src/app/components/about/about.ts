@@ -10,7 +10,7 @@ import { initScrollAnimations } from '../../utils/scroll-animate';
 })
 export class About implements AfterViewInit{
  isVisible = false;
-
+ bgImage = `url(${document.baseURI}aboutbg.png)`;
  constructor(private el: ElementRef){}
 
  ngAfterViewInit() {

@@ -8,8 +8,8 @@ import { Component, ElementRef } from '@angular/core';
 })
 export class Hero {
 isVisible = false;
-
- constructor(private el: ElementRef){}
+bgImage = `url(${document.baseURI}aboutbg.png)`;
+ constructor(private el: ElementRef){console.log(document.baseURI)}
 
  ngAfterViewInit() {
     const observer = new IntersectionObserver(

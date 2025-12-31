@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './skills.css',
 })
 export class Skills {
-
+  bgImage = `url(${document.baseURI}aboutbg.png)`;
    skillGroups = [
     {
       title: 'Backend Development',

@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './contact.css',
 })
 export class Contact {
-
+ bgImage = `url(${document.baseURI}aboutbg.png)`;
 }
