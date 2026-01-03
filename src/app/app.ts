@@ -10,7 +10,7 @@ import { Contact } from './components/contact/contact';
 @Component({
   selector: 'app-root',
   imports: [Navbar, Hero, About, Skills,
-Experience, Contact],
+Experience, Projects, Contact],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

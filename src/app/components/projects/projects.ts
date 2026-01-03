@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './projects.css',
 })
 export class Projects {
-
+bgImage = `url(${document.baseURI}aboutbg.png)`;
 }
